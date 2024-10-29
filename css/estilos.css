@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik Wet Paint", system-ui;
+}
+
+header{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    height: 250px;
+    background-image: url('../img/Fondo1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    color: #173a69;
+    font-size: 50px;
+}
+
+.datos{
+    background-color: cyan;
+    padding: 10px;
+}
+
+.datos> ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.datos img{
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.datos a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.datos a:hover{
+    color: blueviolet;
+    transition: 0.3s ease-in;
+}
+
+#contenido{
+    display: flex;
+    padding: 50px;
+}
+
+.persona{
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img-circular{
+    border-radius: 50%;
+    display: inline-block;
+    width: 220px;
+}
+
+.persona h2, .exp h2, .edu h2, .hab h2{
+    font-size: 16px;
+    text-align: left;
+    border-bottom: #000 2px solid;
+}
+
+.persona p{
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.iconos{
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.iconos img{
+    width: 20px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.iconos a{
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.iconos a:hover{
+    color: purple;
+    transition: 0.3s ease-in;
+}
+
+.cursos{
+    margin-top: 30px;
+}
+
+.cursos ul{
+    padding: 20px;
+    text-align: justify;
+}
+
+.exp, .edu, .hab{
+    padding: 10px;
+}
+
+.exp ul{
+    padding: 20px;
+}
+
+.edu p{
+    margin-top: 15px;
+}
+
+.hab ul{
+    padding: 20px;
+    list-style: none;
+}
+
+.circle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: purple;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width:480px){
+    .datos> ul{
+        flex-direction: column;
+    }
+    #contenido{
+        flex-direction: column;
+    }
+}
